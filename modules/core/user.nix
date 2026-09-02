@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 
 {
   users.users.alfihri = {
@@ -9,20 +9,21 @@
       "networkmanager"
     ];
 
-    packages = with pkgs; [
-      brightnessctl
-      thunar
-      tree
-      git
-      wget
-      curl
-      btop
-      kitty
-      librewolf
-      vscode
-      dnsmasq
-      iw
-      ethtool
-    ];
+		packages = with pkgs; [
+		brightnessctl
+		thunar
+		tree
+		git
+		wget
+		curl
+		btop
+		kitty
+		librewolf
+		thunar
+		vscode
+		dnsmasq
+		iw
+		ethtool
+		];
   };
 }
