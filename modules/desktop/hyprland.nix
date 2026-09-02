@@ -4,24 +4,15 @@
   programs.hyprland.enable = true;
 
   environment.systemPackages = with pkgs; [
-    # Hyprland
-    hyprland
+    # Hyprland Ecosystem
     hyprpolkitagent
     hypridle
     hyprlock
 
-    # Terminal
+    # Terminal & Tools
     kitty
-
-    # XDG
     xdg-user-dirs
-    xdg-desktop-portal
-    xdg-desktop-portal-hyprland
-
-    # Brightness
     brightnessctl
-
-    # Keyring
     gnome-keyring
 
     # Fonts
@@ -32,15 +23,13 @@
     # File manager
     thunar
 
-    # Wallpaper
+    # Wallpaper & Utility
     swww
     imagemagick
 
-    # Clipboard
+    # Clipboard & Screenshot
     cliphist
     wl-clipboard
-
-    # Screenshot
     grim
     slurp
 
@@ -48,6 +37,7 @@
     kdeconnect
   ];
 
+  # Service polkit agent
   systemd.user.services.hyprpolkitagent = {
     description = "Hyprpolkitagent";
     wantedBy = [ "graphical-session.target" ];
