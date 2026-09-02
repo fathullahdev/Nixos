@@ -17,14 +17,13 @@
 
     # Fonts
     noto-fonts
-    noto-fonts-emoji
-    noto-fonts-cjk
+    noto-fonts-color-emoji
 
     # File manager
     thunar
 
     # Wallpaper & Utility
-    swww
+    awww
     imagemagick
 
     # Clipboard & Screenshot
@@ -32,17 +31,8 @@
     wl-clipboard
     grim
     slurp
-
-    # Other
-    kdeconnect
   ];
-
-  # Service polkit agent
-  systemd.user.services.hyprpolkitagent = {
-    description = "Hyprpolkitagent";
-    wantedBy = [ "graphical-session.target" ];
-    serviceConfig = {
-      ExecStart = "${pkgs.hyprpolkitagent}/bin/hyprpolkitagent";
-    };
-  };
 }
+
+
+
