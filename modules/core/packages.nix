@@ -2,11 +2,20 @@
 
 {
   environment.systemPackages = with pkgs; [
-    neovim
     gcc
     gnumake
     unzip
     ripgrep
     fd
+		git
+		wget
+		curl
+		iw
+		ethtool
+		dnsmasq
+		brightnessctl
+		tree
+		librewolf
+		btop
   ];
 }

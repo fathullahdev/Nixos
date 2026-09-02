@@ -10,20 +10,10 @@
     ];
 
 		packages = with pkgs; [
-		brightnessctl
-		thunar
-		tree
-		git
-		wget
-		curl
-		btop
-		kitty
-		librewolf
-		thunar
-		vscode
-		dnsmasq
-		iw
-		ethtool
+			neovim
+			thunar
+			kitty
+			thunar
 		];
   };
 }
