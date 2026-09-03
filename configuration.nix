@@ -1,5 +1,7 @@
 {
   imports = [
+		./hardware-configuration.nix
+
     # Boot
 		./modules/boot/systemd-boot.nix
 
@@ -12,6 +14,7 @@
 		# desktop
     ./modules/desktop/hyprland.nix
     ./modules/desktop/sddm.nix
+		./modules/desktop/waybar.nix
 
 		# hardware
     ./modules/hardware/bluetooth.nix

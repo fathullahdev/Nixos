@@ -17,5 +17,6 @@
 		tree
 		librewolf
 		btop
+		fastfetch
   ];
 }

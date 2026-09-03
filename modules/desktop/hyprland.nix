@@ -1,13 +1,24 @@
 { pkgs, ... }:
 
 {
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+		enable = true;
+		xwayland.enable = true;
+		};
+
+		environment.sessionVariables = {
+    	WLR_NO_HARDWARE_CURSORS = "1";
+    	NIXOS_OZONE_WL = "1";
+    	GBM_BACKEND = "nvidia-drm";
+    	__GLX_VENDOR_LIBRARY_NAME = "nvidia";
+  	};
 
   environment.systemPackages = with pkgs; [
     # Hyprland Ecosystem
     hyprpolkitagent
     hypridle
     hyprlock
+		python3
 
     # Terminal & Tools
     kitty
