@@ -21,6 +21,7 @@
 		Hotspot = {
 			connection = {
 				id = "Hotspot";
+				type = "wifi";
 				autoconnect = "true";
 			};
 		};
