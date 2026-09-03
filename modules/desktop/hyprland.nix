@@ -33,6 +33,9 @@
     # File manager
     thunar
 
+		# manager aplikasi
+		fuzzel
+
     # Wallpaper & Utility
     awww
     imagemagick
