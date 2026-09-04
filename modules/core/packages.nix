@@ -1,7 +1,10 @@
 { pkgs, ... }:
 
 {
-  environment.systemPackages = with pkgs; [
+	# steam
+	programs.steam.enable = true;
+
+	environment.systemPackages = with pkgs; [
     gcc
     gnumake
     unzip

@@ -10,6 +10,7 @@
     ./modules/core/nix.nix
     ./modules/core/user.nix
 		./modules/core/packages.nix
+		./modules/core/disk.nix
 
 		# desktop
     ./modules/desktop/hyprland.nix
